@@ -8,20 +8,14 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_Name",
+						"type": "string"
 					}
 				],
-				"name": "productID",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "addProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -32,12 +26,25 @@
 						"type": "uint256"
 					}
 				],
-				"name": "productList",
+				"name": "getProduct",
 				"outputs": [
 					{
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nextproductID",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -91,11 +98,11 @@
 	},
 	"sources": {
 		"Marketplace.sol": {
-			"keccak256": "0xdd90adb5c747022aedef178e9eae8390fcbe3f480a0daed0630861f6207a061d",
+			"keccak256": "0x3abff4f9b2698c7751a5933ecb982fb38b6efd107d7c966241f9d682a6364a5a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d54555c015e230c06f8680ba22581c18a6e35005e942fefa881bb8ebcc70176b",
-				"dweb:/ipfs/QmbgW7bQKFkWrgUan152Hcigu1PMM3pMPSkUQduSz56o9p"
+				"bzz-raw://cb3fda02cce6205568aa94eed6d48c149826f958396196faf96612d7192da562",
+				"dweb:/ipfs/QmUxHQGsgorojctQ4p5goR26FS4RXgsBSCe65WTxw3CpSD"
 			]
 		}
 	},

@@ -2,16 +2,16 @@
 pragma solidity ^0.8.13;
 
 contract Marketplace {
-    uint[] public productID;
-    string[] public productName = ["nft1", "nf2", "nft3", "nft4", "nft5"];
+    uint public nextproductID;
+    mapping(uint => string) public productName;
 
-    function productList(uint _valueID/*, string memory _valueName */) public view returns (string memory){   
-        uint lengthid = productID.length;
-        for (uint i = 0; i < lengthid; i++) {
-            if (_valueID == productID[i]){
-                return productName[i];
-            }
-        }
-        revert("Product not found");
+    function addProduct(string memory _Name) public{
+        productName[nextproductID] = _Name;
+        nextproductID++;
+    }
+    function getProduct(uint _valueID) public view returns (string memory){   
+        string memory name = productName[_valueID];
+        require(bytes(name).length > 0, "Product not found");
+        return name;
     }
 }
