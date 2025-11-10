@@ -68,6 +68,25 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_valueID",
+						"type": "uint256"
+					}
+				],
+				"name": "sellProduct",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -83,7 +102,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Marketplace.sol": "Marketplace"
+			"Contracts/Marketplace.sol": "Marketplace"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -97,12 +116,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Marketplace.sol": {
-			"keccak256": "0x3abff4f9b2698c7751a5933ecb982fb38b6efd107d7c966241f9d682a6364a5a",
+		"Contracts/Marketplace.sol": {
+			"keccak256": "0x8279d3fdab30aa7aebb7169f6308a1873ab6b1ef7748871793d13ef46201a549",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cb3fda02cce6205568aa94eed6d48c149826f958396196faf96612d7192da562",
-				"dweb:/ipfs/QmUxHQGsgorojctQ4p5goR26FS4RXgsBSCe65WTxw3CpSD"
+				"bzz-raw://f9263398e2dfc73d765a46798b7e48ecbbb777af79bb0210d25b03c4b0d7c005",
+				"dweb:/ipfs/QmSBKQuNtaToW6M5RsFJwJzptJrTxTv59td6m1Vdth43o1"
 			]
 		}
 	},

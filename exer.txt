@@ -1,0 +1,128 @@
+🟢 Nível 1 — Fundamentos da Linguagem
+1. Hello Blockchain
+
+Objetivo: Criar um contrato simples que armazene uma mensagem.
+Tópicos: string, public, constructor, set/get.
+
+// Exemplo:
+contract HelloBlockchain {
+    string public message;
+
+    constructor(string memory initialMessage) {
+        message = initialMessage;
+    }
+
+    function setMessage(string memory newMessage) public {
+        message = newMessage;
+    }
+}
+
+
+Exercício:
+
+Modifique o contrato para incluir o endereço (address) de quem criou a mensagem.
+
+Crie uma função que apenas o criador possa usar para alterar a mensagem.
+
+2. Contador Simples
+
+Objetivo: Criar um contador que possa ser incrementado e decrementado.
+Tópicos: uint, require, view.
+
+Desafio extra:
+
+Impedir que o contador fique negativo.
+
+Adicionar um evento (event) para cada mudança.
+
+🟡 Nível 2 — Estruturas e Controle
+3. Registro de Usuários
+
+Objetivo: Permitir que qualquer pessoa registre seu nome.
+Tópicos: mapping, struct, msg.sender.
+
+Desafio extra:
+
+Impedir que um endereço se registre duas vezes.
+
+Criar uma função para consultar um usuário pelo endereço.
+
+4. Lista de Tarefas (To-Do List)
+
+Objetivo: Cada usuário pode criar e marcar tarefas como concluídas.
+Tópicos: array, mapping, struct.
+
+Desafio extra:
+
+Adicionar eventos quando tarefas forem criadas ou concluídas.
+
+Permitir exclusão de tarefas.
+
+🟠 Nível 3 — Tokens e Pagamentos
+5. Contrato de Cofrinho
+
+Objetivo: Permitir depósitos e retiradas em ETH.
+Tópicos: payable, address(this).balance, transfer.
+
+Desafio extra:
+
+Permitir apenas ao dono sacar.
+
+Emitir eventos para depósitos e saques.
+
+6. Token ERC-20 Simplificado
+
+Objetivo: Implementar uma versão mínima de um token fungível.
+Tópicos: mapping, event, transfer, approve, allowance.
+
+Desafio extra:
+
+Criar funções mint e burn.
+
+Restringir a função mint apenas ao dono.
+
+🔵 Nível 4 — Lógica e Segurança
+7. Leilão Simples
+
+Objetivo: Implementar um sistema de leilão com tempo limitado.
+Tópicos: block.timestamp, require, transfer.
+
+Desafio extra:
+
+Permitir apenas que o maior lance ganhe ao final.
+
+Tratar reentrância (usar withdraw pattern).
+
+8. Contrato de Votação
+
+Objetivo: Criar um sistema de votação com múltiplas opções.
+Tópicos: struct, mapping, for loop, modifier.
+
+Desafio extra:
+
+Impedir que um usuário vote mais de uma vez.
+
+Exibir a opção vencedora.
+
+🔴 Nível 5 — Avançado e Padrões
+9. Crowdfunding
+
+Objetivo: Criar um sistema de arrecadação de fundos com meta e prazo.
+Tópicos: payable, mapping, enum, modifier.
+
+Desafio extra:
+
+Se a meta for atingida, o criador pode sacar.
+
+Caso contrário, os doadores podem reaver o valor.
+
+10. Marketplace de NFTs
+
+Objetivo: Permitir a listagem e compra de NFTs (use ERC-721 já existente).
+Tópicos: interface, IERC721, transferFrom.
+
+Desafio extra:
+
+Implementar taxa de serviço.
+
+Armazenar histórico de vendas.

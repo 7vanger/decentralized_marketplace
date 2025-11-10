@@ -14,4 +14,8 @@ contract Marketplace {
         require(bytes(name).length > 0, "Product not found");
         return name;
     }
+
+    function sellProduct(uint _valueID) public view returns (string memory){
+        
+    }
 }
